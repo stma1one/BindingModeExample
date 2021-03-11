@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingModeExample.MainPageV2">
+
+    <StackLayout>
+        <Label  HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString >
+                    <Span Text="Question:" FontSize="Large"></Span>
+                    <Span Text="{Binding Question}" FontSize="Large" TextColor="Red" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.5"></Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Entry Placeholder="enter your answer" TextColor="Brown" BackgroundColor="LightBlue" IsEnabled="False" Text="{Binding Answer}" HorizontalTextAlignment="Center"></Entry>
+        <Button Text="Press to find the answer" FontAttributes="Bold" FontSize="Medium" Clicked="Button_Clicked"></Button>
+        <Button Text="Move to the GOOD PAGE" FontAttributes="Bold" FontSize="Medium" Clicked="Button_MOVE_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingModeExample.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Choose your Battle:" FontSize="Large"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="See Binding to an Object without notification event" FontAttributes="Bold" FontSize="Medium" Clicked="Button_Clicked"></Button>
+            <Button Text="See Binding to an Object with notification event" FontAttributes="Bold" FontSize="Medium" Clicked="Button_Clicked_1"></Button>
+            <Button Text="See Binding Between visual elements" FontAttributes="Bold" FontSize="Medium" Clicked="Button_Clicked_2"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
